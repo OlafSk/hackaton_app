@@ -34,6 +34,7 @@ conn_params = dict(host='85.194.245.31',
 df = pd.read_csv("DaneModelowanie.csv", index_col = 0)
 
 app = dash.Dash(__name__)
+server = app.server
 
 square_info = pd.read_csv('squareInformation.csv', index_col = 0)
 
